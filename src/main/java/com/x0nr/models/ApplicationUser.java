@@ -33,6 +33,7 @@ public class ApplicationUser implements UserDetails {
     private Integer userId;
 
     private String password;
+    @Column(unique = true)
     private String username;
 
     @ManyToMany(fetch = FetchType.EAGER)
